@@ -9,7 +9,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 class Transformer(nn.Module):
     def __init__(self, vocab_size, max_seq_len, d_model, n_enc, n_heads, dropout, n_classes):
-        super(RteTransformer, self).__init__()
+        super(Transformer, self).__init__()
         self.max_seq_len = max_seq_len
         self.d_model = d_model
 
